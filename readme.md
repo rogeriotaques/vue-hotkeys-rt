@@ -1,15 +1,8 @@
 # Vue Hotkeys
 
-<style>
-img {
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
-  border-radius: 5px;
-}
-</style>
-
 <br >
 
-![Screenshot](./screenshot.png "Screenshot")
+<img alt="Screenshot" src="./screenshot.png" style="box-shadow: 0 0 12px rgba(0,0,0,0.3);border-radius: 5px;" >
 
 <br >
 
