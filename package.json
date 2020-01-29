@@ -5,7 +5,7 @@
   "main": "./Hotkeys.vue",
   "scripts": {
     "start": "parcel src/index.html --no-cache",
-    "build": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=."
+    "build": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./"
   },
   "keywords": [
     "vue",
