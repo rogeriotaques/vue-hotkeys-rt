@@ -2,7 +2,9 @@
 
 <br >
 
-<img alt="Screenshot" src="./screenshot.png" style="box-shadow: 0 0 12px rgba(0,0,0,0.3);border-radius: 5px;" >
+<div style="box-shadow: 0 0 12px rgba(0,0,0,0.3);border-radius: 5px;">
+  <img alt="Screenshot" src="./screenshot.png" />
+</div>
 
 <br >
 
