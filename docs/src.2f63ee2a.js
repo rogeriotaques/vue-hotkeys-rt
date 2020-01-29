@@ -8,4 +8,4 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{}],"QCba":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("vue/dist/vue.js")),r=e(require("../Hotkeys.vue"));new t.default({el:"#app",components:{Hotkeys:r.default},template:'      <div >        <hotkeys           :shortcuts="[\'S\', \'D\']"           :debug="true"           @triggered="onTriggeredEventHandler"         />      </div>    ',methods:{onTriggeredEventHandler:function(e){document.querySelector("#log").innerHTML="You have pressed <strong>CMD (CTRL) + "+e.keyString+"</strong> 🤘"}}}),module.hot&&module.hot.accept();
 },{"vue/dist/vue.js":"HbND","../Hotkeys.vue":"nARX"}]},{},["QCba"], null)
-//# sourceMappingURL=/src.2f63ee2a.js.map
+//# sourceMappingURL=src.2f63ee2a.js.map
