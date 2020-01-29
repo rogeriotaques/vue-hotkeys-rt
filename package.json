@@ -4,7 +4,8 @@
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
   "main": "./Hotkeys.vue",
   "scripts": {
-    "start": "parcel src/index.html --no-cache"
+    "start": "parcel src/index.html --no-cache",
+    "build": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs"
   },
   "keywords": [
     "vue",
