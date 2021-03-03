@@ -33,7 +33,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "typescript": "^3.7.5",
     "vue": "^2.6.11",
     "vue-eslint-parser": "^7.0.0",
