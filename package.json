@@ -20,6 +20,7 @@
   "author": "Rogerio Taques",
   "license": "MIT",
   "dependencies": {
+    "parcel": "^2.7.0",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
