@@ -1,6 +1,6 @@
 {
   "name": "vue-hotkeys-rt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
   "main": "./Hotkeys.vue",
   "scripts": {
