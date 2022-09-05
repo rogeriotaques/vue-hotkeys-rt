@@ -173,22 +173,3 @@ li {
     text-align: center;
   }
 }
-
-/* @media only screen and (max-width: 820px) {
-    .hero {
-        margin: auto;
-        width: 95%;
-        padding: 2px;
-        padding-top: 30px;
-        text-align: center;
-      }
-      
-      .heading {
-        font-size: 60px;
-        line-height: 1.25;
-        font-weight: 900;
-        letter-spacing: -0.5px;
-        max-width: 960px;
-        margin: 0 auto;
-      }
-} */
