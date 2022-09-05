@@ -1,6 +1,5 @@
 <!-- Vue Hotkeys -->
-<template>
-</template>
+<template></template>
 
 <script lang="ts">
 export default {

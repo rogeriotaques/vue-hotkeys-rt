@@ -1,96 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Hotkeys</title>
+    <script type="text/javascript" src="./index.ts" defer></script>
+    <script type="text/javascript" src="./detectos.ts" defer></script>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <img src="./assets/HOTKEYSmain.png" style="padding-bottom: 40px; height: 40px;">
+      <h4 style="padding-bottom: 25px; color: gray; font-weight: 200;">
+        <span class="badge">v1.0</span>&nbsp;&nbsp;Easy to use shortcut keys component
+      </h4>
+      <h1 class="heading">Implement <span class="colorful-heading">Shortcut Keys</span>
+        <br> in your Vue apps
+      </h1>
+      <p style="padding-top: 20px; font-size: 20px; color: gray;">Approachable, Full featured and Easy to use Shortcut Keys components for your Vue.js apps</p>
+      <p style="padding-top: 20px; font-size: 20px; font-family: Helvetica,">
+        <button class="docs-btn"><a href="#docs" style="color:white; text-decoration:none;">Documentation</a></button>
+        <button class="try-btn"><a href="#try" style="color:white; text-decoration:none;">Try Now</a></button>
+      </p>
+    </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vue Hotkeys</title>
-  <link rel="stylesheet" type="text/css" href="https://abtzlabs.github.io/seed-css/assets/css/seed.css?v=v2.5.1">
-  <script type="text/javascript" src="./index.ts" defer></script>
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      border: 1px solid black;
-      width: 100%;
-    }
+    <div style="text-align: center; padding-top: 10px;" id="try">
+      Try It by pressing below commands ❤️<br>
+      <ul class="myUL"> 
+        <li><span id="detectOs1">⌘</span> + S</li>
+        <li><span id="detectOs2">⌘</span> + D</li>
+      </ul>
+      <ul class="myUL">
+        <li><span id="detectOs3">⌘</span> + ⬅️</li>
+        <li><span id="detectOs4">⌘</span> + ➡️</li>
+      </ul>
+    <div class="tryit">
+      <div id="log" class="red"></div>
+      <div id="app"></div>
+    </div>
+    </div>
 
-    td,
-    th {
-      border: 1px solid black;
-      text-align: center;
-      padding: 8px;
-    }
 
-    th {
-      background-color: #dddddd;
-    }
-  </style>
-</head>
 
-<body>
-  <div class="container">
-    <h1>Vue Hotkeys</h1>
-
-    <p class="lead">
-      The <b class="primary">Vue Hotkeys</b> component helps you to smoothly implement keyboard shortcuts to any <strong
-        class="green">Vue</strong> application.
-    </p>
-
-    <p class="lead">Try the following hotkeys:</p>
-
-    <ul>
-      <li class="lead">⌘ + <strong>S</strong></li>
-      <li class="lead">⌘ + <strong>D</strong></li>
-      <li class="lead">⌘ + <strong>⬅️</strong></li>
-      <li class="lead">⌘ + <strong>➡️</strong></li>
-    </ul>
-
-    <div id="log" class="red"></div>
-
-    <p class="lead"><strong style="color: orangered;">Note: </strong>For using <strong>Arrow Keys</strong> you have to
-      pass below Strings to the <i style="color: blueviolet"><strong>shortcuts</strong></i> prop</p>
-
-      <table style="width:40%">
-        <tr>
-          <th>Arrow</th>
-          <th>String (prop) to be passed</th>
-          <th>Code</th>
-        </tr>
-        <tr>
-          <td>Arrow Left ⬅️</td>
-          <td><i>ArrowLeft</i></td>
-          <td>37</td>
-        </tr>
-        <tr>
-          <td>Arrow Up ⬆️</td>
-          <td><i>ArrowUp</i></td>
-          <td>38</td>
-        </tr>
-        <tr>
-          <td>Arrow Right ➡️</td>
-          <td><i>ArrowRight</i></td>
-          <td>39</td>
-        </tr>
-        <tr>
-          <td>Arrow Down ⬇️</td>
-          <td><i>ArrowDown</i></td>
-          <td>40</td>
-        </tr>
-      </table>
-
-    
-    <div id="app"></div>
-
-    <p>
-      &copy; <a href="https://twitter.com/rogeriotaques" target="_blank">Rogerio Taques</a>. Licensed under
-      <strong>
-        <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT</a>
-      </strong>.
-    </p>
-  </div>
-</body>
-
+  </body>
 </html>
