@@ -19,6 +19,9 @@
   ],
   "author": "Rogerio Taques",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/rogeriotaques/vue-hotkeys-rt"
+  },
   "dependencies": {
     "parcel": "^2.7.0",
     "vue-hot-reload-api": "^2.3.4"
