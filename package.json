@@ -1,6 +1,6 @@
 {
   "name": "vue-hotkeys-rt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
   "main": "./Hotkeys.vue",
   "scripts": {
@@ -19,6 +19,9 @@
   ],
   "author": "Rogerio Taques",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/rogeriotaques/vue-hotkeys-rt"
+  },
   "dependencies": {
     "parcel": "^2.7.0",
     "vue-hot-reload-api": "^2.3.4"
