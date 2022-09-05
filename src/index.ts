@@ -8,12 +8,13 @@ new Vue({
     '\
       <div >\
         <hotkeys \
-          :shortcuts="[\'S\', \'D\']" \
+          :shortcuts="[\'S\', \'D\', \'ArrowLeft\', \'ArrowRight\']" \
           :debug="true" \
           @triggered="onTriggeredEventHandler" \
         />\
       </div>\
-    ',
+    '
+  ,
   methods: {
     onTriggeredEventHandler(payload) {
       document.querySelector('#log').innerHTML = `You have pressed <strong>CMD (CTRL) + ${payload.keyString}</strong> 🤘`;

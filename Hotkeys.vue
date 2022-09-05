@@ -1,5 +1,6 @@
 <!-- Vue Hotkeys -->
-<template></template>
+<template>
+</template>
 
 <script lang="ts">
 export default {
@@ -51,7 +52,16 @@ export default {
     if (this.shortcuts && this.shortcuts.length) {
       this.shortcuts.forEach((sc) => {
         if (sc) {
-          this.supportedShortcuts.push({ keyString: sc, keyCode: sc.charCodeAt(0) });
+          if(sc == 'ArrowLeft') // if ArrowLeft is passed
+            this.supportedShortcuts.push({ keyString: sc, keyCode: 37 });
+          else if(sc == 'ArrowRight')  // if ArrowRight is passed
+            this.supportedShortcuts.push({ keyString: sc, keyCode: 39 });
+          else if(sc == 'ArrowUp') // if ArrowUp is passed
+            this.supportedShortcuts.push({ keyString: sc, keyCode: 38 });
+          else if(sc == 'ArrowDown') // if ArrowDown is passed
+            this.supportedShortcuts.push({ keyString: sc, keyCode: 40 });
+          else  // if any other key is passed
+            this.supportedShortcuts.push({ keyString: sc, keyCode: sc.charCodeAt(0) });
         }
       });
     }
