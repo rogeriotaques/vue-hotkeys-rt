@@ -8,6 +8,10 @@
 
 <br >
 
+## Demo
+
+https://rogeriotaques.github.io/vue-hotkeys-rt/
+
 ## Getting started
 
 Install the component as a dependency of your project.
