@@ -146,7 +146,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 430px) {
   .hero {
     margin: auto;
     width: 90%;
@@ -156,7 +156,7 @@ li {
   }
 
   .heading {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 1.25;
     font-weight: 900;
     letter-spacing: -0.5px;
@@ -171,5 +171,13 @@ li {
     padding: 15px;
     background-color: lightgray;
     text-align: center;
+  }
+
+  .docs-btn {
+    margin-right: 10px;
+  }
+
+  .try-btn {
+    margin-right: 10px;
   }
 }
