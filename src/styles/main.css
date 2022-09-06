@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
+* {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -146,6 +150,22 @@ li {
   }
 }
 
+.installation-cmds {
+  text-align: center;
+  margin: auto;
+  width: 20%;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.installation-yarn {
+  color: white;
+}
+
+.installation-npm {
+  color: white;
+}
+
 @media only screen and (max-width: 430px) {
   .hero {
     margin: auto;
@@ -179,5 +199,9 @@ li {
 
   .try-btn {
     margin-right: 10px;
+  }
+
+  .installation-cmds {
+    width: 80%;
   }
 }
