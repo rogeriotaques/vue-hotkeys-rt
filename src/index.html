@@ -8,6 +8,7 @@
     <script type="text/javascript" src="./index.ts" defer></script>
     <script type="text/javascript" src="./detectos.ts" defer></script>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="hero">
@@ -34,15 +35,15 @@
       </div>
     </div>
 
-    <div style="text-align: center; padding-top: 10px;" id="try">
+    <div style="text-align: center; padding-top: 10px; padding-bottom: 20px" id="try">
       Try It by pressing below commands ❤️<br>
-      <ul class="myUL"> 
-        <li><span id="detectOs1">⌘</span> + S</li>
-        <li><span id="detectOs2">⌘</span> + D</li>
+      <ul class="myUL ul"> 
+        <li class="li"><span id="detectOs1">⌘</span> + S</li>
+        <li class="li"><span id="detectOs2">⌘</span> + D</li>
       </ul>
-      <ul class="myUL">
-        <li><span id="detectOs3">⌘</span> + ⬅️</li>
-        <li><span id="detectOs4">⌘</span> + ➡️</li>
+      <ul class="myUL ul">
+        <li class="li"><span id="detectOs3">⌘</span> + ⬅️</li>
+        <li class="li"><span id="detectOs4">⌘</span> + ➡️</li>
       </ul>
     <div class="tryit">
       <div id="log" class="red"></div>
@@ -50,7 +51,83 @@
     </div>
     </div>
 
+    
+    <div id="docs">
+      <p style="font-size: 18px; line-height: 25px;">The <span style="color: blue">Vue Hotkeys</span> Component helps you to smoothly implement keyboard shortcuts to any <span style="color: #42B883">Vue</span> application</p>
+      <h2 style="font-size: 30px; padding-top: 20px;">Getting Started</h2>
+      <div style="font-size: 17px;">
+      <p>For, using vue-hotkeys-rt in your vue apps, you have to install it as a dependency by following commands</p>
+      <pre><code class="language-bash">&gt; yarn add vue-hotkeys-rt</code></pre>
+      <p>or</p>
+      <pre><code class="language-bash">&gt; npm install vue-hotkeys-rt -S</code></pre>
+      <p>After, that you have to import it in your vue app</p>
+      <pre><code class="language-javascript">
+import Vue from 'vue/dist/vue.js';
+import Hotkeys from 'vue-hotkeys-rt';
+
+new Vue({
+  ...
+  components: { Hotkeys },
+  ...
+});</code></pre>
+    </div>
+
+    <h2 style="font-size: 30px; padding-top: 20px;">Handling the keyboard shortcuts</h2>
+    <div style="font-size: 17px; line-height: 25px;">
+      <p>Vue Hotkeys emits the <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">triggered event</code> always a shortcut is used. So, everything you need to do is define a handler that will take an action depending on the pressed keys.</p>
+      <p>Vue Hotkeys assume that a shortcut is a combination of CMD+<code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">Key</code>.</p>
+      
+      <pre><code class="language-javascript">
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;Hotkeys
+      :shortcuts="['S', 'D', 'ArrowLeft', 'ArrowRight']"
+      :debug="true"
+      @triggered="onTriggeredEventHandler"
+    /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+        
+&lt;script lang="ts"&gt;
+import Hotkeys from 'vue-hotkeys-rt';
+        
+export default {
+  ...
+  components: { Hotkeys },
+        
+  methods: {
+    onTriggeredEventHandler(payload) {
+      console.log(`You have pressed CMD (CTRL) + ${payload.keyString}`);
+    }
+  }
+  ...
+};
+&lt;/script&gt;</code></pre>
+</div>
+    
+    <h2 style="font-size: 30px; padding-top: 20px;">Passing props and event</h2>
+    <div style="font-size: 17px; line-height: 25px;">
+    <p>The <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">&lt;Hotkeys /&gt;</code> component accepts two props and one event called <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">triggered</code>
+    <ol>
+      <li>shortcuts</li>
+      <li>debug</li>
+      <li>@triggered</li>
+    </ol>
+  </p>
+    <p><span style="font-weight: bold;">shortcuts prop</span> accepts array of strings something like <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">:shortcuts="['S', 'D', 'ArrowLeft', 'ArrowRight']"</code>. These strings/characters are basically keyboard buttons which you want to use to trigger an event. For, A.....Z buttons you can use same name but for using different keys like Arrow Keys (⬅️, ➡️) you have to pass specific values for that please refer <a href="" style="color: blue;">this table</a>.</p>
+    
+    <p>Next, <span style="font-weight: bold;">debug prop</span> accepts <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">boolean</code> value. This prop is useful in developement mode where you can see which key has been pressed in the console.<br>
+    If you are in a production mode then you should have to pass it as a "false" it's recommended.
+    </p>
+
+    <p>After that, next is <span style="font-weight: bold;">@triggered event</span> in which you have to pass a method which have to call when user press that specific keys. (This is just a event listener if you know the concept of <a href="https://vuejs.org/guide/components/events.html" style="color: blue;">Component Events in Vue</a>). You have to pass name of the method which you have to call after pressing the shortcut keys.</p>
+    </div>
+    </div>
 
 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-bash.min.js" integrity="sha512-35RBtvuCKWANuRid6RXP2gYm4D5RMieVL/xbp6KiMXlIqgNrI7XRUh9HurE8lKHW4aRpC0TZU3ZfqG8qmQ35zA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

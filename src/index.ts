@@ -17,7 +17,7 @@ new Vue({
   ,
   methods: {
     onTriggeredEventHandler(payload) {
-      document.querySelector('#log').innerHTML = `You have pressed <strong>CMD (CTRL) + ${payload.keyString}</strong> 🤘`;
+      document.querySelector('#log').innerHTML = `You have pressed <strong style="color: red;">CMD (CTRL) + ${payload.keyString}</strong> 🤘`;
     } // onTriggeredEventHandler
   }
 });

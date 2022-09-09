@@ -31,10 +31,10 @@ body {
   text-align: center;
 }
 
-ul {
+.ul {
   padding: 0px;
 }
-li {
+.li {
   display: inline-block;
   width: 100px;
   list-style-type: circle;
@@ -166,6 +166,32 @@ li {
   color: white;
 }
 
+.dividing-border {
+  border-bottom: 3px dashed #42b883;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+#docs {
+  padding-top: 60px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.header-anchor {
+  opacity: 1;
+}
+
+.subsection {
+  margin-left: 35px;
+  margin-top: -10px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 @media only screen and (max-width: 430px) {
   .hero {
     margin: auto;
@@ -203,5 +229,13 @@ li {
 
   .installation-cmds {
     width: 80%;
+  }
+
+  #docs {
+    width: 90%;
+  }
+
+  .subsection {
+    margin-left: 0px;
   }
 }
