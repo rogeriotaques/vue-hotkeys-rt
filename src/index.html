@@ -7,6 +7,7 @@
     <title>Vue Hotkeys</title>
     <script type="text/javascript" src="./index.ts" defer></script>
     <script type="text/javascript" src="./detectos.ts" defer></script>
+    <script type="text/javascript" src="./table.ts" defer></script>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -114,7 +115,7 @@ export default {
       <li>@triggered</li>
     </ol>
   </p>
-    <p><span style="font-weight: bold;">shortcuts prop</span> accepts array of strings something like <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">:shortcuts="['S', 'D', 'ArrowLeft', 'ArrowRight']"</code>. These strings/characters are basically keyboard buttons which you want to use to trigger an event. For, A.....Z buttons you can use same name but for using different keys like Arrow Keys (⬅️, ➡️) you have to pass specific values for that please refer <a href="" style="color: blue;">this table</a>.</p>
+    <p><span style="font-weight: bold;">shortcuts prop</span> accepts array of strings something like <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">:shortcuts="['S', 'D', 'ArrowLeft', 'ArrowRight']"</code>. These strings/characters are basically keyboard buttons which you want to use to trigger an event. For, A.....Z buttons you can use same name but for using different keys like Arrow Keys (⬅️, ➡️) you have to pass specific values for that please refer <a href="#table" style="color: blue;">this table</a>.</p>
     
     <p>Next, <span style="font-weight: bold;">debug prop</span> accepts <code style="font-size: 16px; color: orangered; background-color: lightgray; padding: 0 3px 0 3px">boolean</code> value. This prop is useful in developement mode where you can see which key has been pressed in the console.<br>
     If you are in a production mode then you should have to pass it as a "false" it's recommended.
@@ -122,9 +123,30 @@ export default {
 
     <p>After that, next is <span style="font-weight: bold;">@triggered event</span> in which you have to pass a method which have to call when user press that specific keys. (This is just a event listener if you know the concept of <a href="https://vuejs.org/guide/components/events.html" style="color: blue;">Component Events in Vue</a>). You have to pass name of the method which you have to call after pressing the shortcut keys.</p>
     </div>
+
+
+
+    <h2 style="font-size: 30px; padding-top: 20px;" id="table">Props Table</h2>
+    <div id="table-app" style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>Key</th>
+          <th>String (prop) to be passed</th>
+          <th>Code</th>
+        </tr>
+        <tr v-for="key in keys">
+          <td>{{key.name}}</td>
+          <td><i>{{key.prop}}</i></td>
+          <td>{{key.code}}</td>
+        </tr>
+      </table>
     </div>
 
 
+    </div>
+
+
+    
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
