@@ -14,6 +14,11 @@ body {
     sans-serif;
 }
 
+.contributor-icon {
+    border-radius: 50%;
+    padding: 7px;
+}
+
 .badge {
   background-color: #f6ca2c;
   color: white;
@@ -67,17 +72,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
 .docs-btn {
- 
   display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
   line-height: 1;
   border-radius: 500px;
-  transition-property: background-color,border-color,color,box-shadow,filter;
-  transition-duration: .3s;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
   border: 1px solid transparent;
   letter-spacing: 2px;
   min-width: 160px;
@@ -87,11 +90,11 @@ body {
   text-align: center;
   padding: 17px 48px;
   color: #fff;
-  background-color: #42D392;
+  background-color: #42d392;
   height: 48px;
 }
 
-.docs-btn :hover{
+.docs-btn :hover {
   transform: scale(1.04);
   background-color: #21e065;
 }
@@ -171,12 +174,16 @@ th {
 
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (max-width: 430px) {

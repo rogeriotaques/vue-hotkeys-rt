@@ -8,6 +8,7 @@
     <script type="text/javascript" src="./index.ts" defer></script>
     <script type="text/javascript" src="./detectos.ts" defer></script>
     <script type="text/javascript" src="./table.ts" defer></script>
+    <script type="text/javascript" src="./contributors.ts" defer></script>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -160,6 +161,18 @@ export default {
           <p>Now, run below command to start developement server</p>
           <pre><code class="language-bash">&gt; npm run start</code></pre>
           <p>Do, make your changes and after that make Pull Request 🙂.</p>
+      </div>
+    </div>
+
+
+    <div id="contributors" style="padding-bottom: 40px;">
+      <h2 style="font-size: 30px; padding-top: 20px;" id="table">Contributors</h2>
+      <div id="contributors-section">
+          <div v-for="contributor in contributors">
+            <a :href="contributor.html_url">
+              <img align="left" width="50px" :src="contributor.avatar_url" :alt="contributor.login" class="contributor-icon" />
+            </a>
+          </div>
       </div>
     </div>
 
