@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.contributor-icon {
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.badge {
+  background-color: #f6ca2c;
+  color: white;
+  font-weight: lighter;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.hero {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.ul {
+  padding: 0px;
+}
+
+.li {
+  display: inline-block;
+  width: 100px;
+  list-style-type: circle;
+  font-weight: bold;
+}
+
+.tryit {
+  margin: auto;
+  width: 30%;
+  border: 3px dashed #42b883;
+  padding: 15px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.heading {
+  font-size: 65px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #213547;
+}
+
+.colorful-heading {
+  background-image: -webkit-linear-gradient(315deg, rgb(66, 211, 146) 25%, rgb(100, 126, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.docs-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #42d392;
+  height: 48px;
+}
+
+.docs-btn :hover {
+  transform: scale(1.04);
+  background-color: #21e065;
+}
+
+.dividing-border {
+  border-bottom: 3px dashed #42b883;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+#docs {
+  padding-top: 60px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.header-anchor {
+  opacity: 1;
+}
+
+.subsection {
+  margin-left: 35px;
+  margin-top: -10px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+#footer {
+  padding-top: 80px;
+  text-align: center;
+  margin: auto;
+}
+
+.github-icon {
+  height: 25px;
+  width: 25px;
+  margin: 0px 9px 0px 4px;
+}
+
+.npm-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.card {
+  padding: 1rem;
+  height: 4rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .hero {
+    margin: auto;
+    width: 90%;
+    padding: 2px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 45px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .tryit {
+    margin: auto;
+    width: 80%;
+    border: 3px dashed #42b883;
+    padding: 15px;
+    background-color: lightgray;
+    text-align: center;
+  }
+
+  .docs-btn {
+    margin-right: 10px;
+  }
+
+  .try-btn {
+    margin-right: 10px;
+  }
+
+  .installation-cmds {
+    width: 80%;
+  }
+
+  #docs {
+    width: 90%;
+  }
+
+  .subsection {
+    margin-left: 0px;
+  }
+
+  .card {
+    padding: 2px;
+    height: 30px;
+  }
+}
