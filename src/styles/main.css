@@ -50,9 +50,10 @@ body {
 .tryit {
   margin: auto;
   width: 30%;
-  border: 3px dashed #42b883;
+  border: 2px dashed #42b883;
+  border-radius: 4px;
   padding: 15px;
-  background-color: lightgray;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
