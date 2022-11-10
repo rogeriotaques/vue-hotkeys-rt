@@ -26,12 +26,12 @@ new Vue({
             code: 40
         },
         {
-          name: "A",
+          name: "A 🅰️",
           prop: "A",
           code: 65
         },
         {
-          name: "B",
+          name: "B 🅱️",
           prop: "B",
           code: 66
         },
