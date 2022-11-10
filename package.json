@@ -2,7 +2,6 @@
   "name": "vue-hotkeys-rt",
   "version": "0.2.0",
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
-  "main": "./Hotkeys.vue",
   "scripts": {
     "start": "parcel src/index.html --no-cache",
     "build": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./"
@@ -27,6 +26,7 @@
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
+    "@parcel/transformer-vue": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "@vue/component-compiler-utils": "^3.1.1",
