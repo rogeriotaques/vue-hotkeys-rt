@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html --no-cache",
     "build:docs": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./",
-    "build:dist": "rm -rf dist && mkdir dist && cp src/Hotkeys.vue dist/"
+    "build:dist": "rm -rf dist && mkdir dist && cp ./Hotkeys.vue ./dist/"
   },
   "keywords": [
     "vue",
