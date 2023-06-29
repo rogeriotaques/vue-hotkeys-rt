@@ -1,11 +1,11 @@
 {
   "name": "vue-hotkeys-rt",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
   "scripts": {
     "start": "parcel src/index.html --no-cache",
     "build:docs": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./",
-    "build:comp": "rm -rf dist && mkdir dist && cp src/Hotkeys.vue dist/"
+    "build:component": "rm -rf dist && mkdir dist && cp src/Hotkeys.vue dist/"
   },
   "keywords": [
     "vue",
@@ -45,6 +45,7 @@
   },
   "files": [
     "dist/**/*",
-    "readme.md"
+    "readme.md",
+    "LICENSE"
   ]
 }
