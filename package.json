@@ -1,10 +1,11 @@
 {
   "name": "vue-hotkeys-rt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Smoothly implements keyboard shortcuts (hotkeys) in Vue applications.",
   "scripts": {
     "start": "parcel src/index.html --no-cache",
-    "build": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./"
+    "build:docs": "NODE_ENV=production parcel build src/index.html --no-cache --out-dir=./docs --public-url=./",
+    "build:comp": "rm -rf dist && mkdir dist && cp src/Hotkeys.vue dist/"
   },
   "keywords": [
     "vue",
@@ -21,10 +22,7 @@
   "repository": {
     "url": "https://github.com/rogeriotaques/vue-hotkeys-rt"
   },
-  "dependencies": {
-    "parcel": "^2.7.0",
-    "vue-hot-reload-api": "^2.3.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@parcel/transformer-vue": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
@@ -35,12 +33,18 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
+    "parcel": "^2.7.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
     "pug": "^3.0.1",
     "typescript": "^3.7.5",
     "vue": "^2.6.11",
     "vue-eslint-parser": "^7.0.0",
+    "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "files": [
+    "dist/**/*",
+    "readme.md"
+  ]
 }
