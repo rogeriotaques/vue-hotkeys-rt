@@ -867,29 +867,29 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@msgpackr-extract/msgpackr-extract-darwin-arm64@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@msgpackr-extract/msgpackr-extract-darwin-arm64/-/msgpackr-extract-darwin-arm64-2.1.2.tgz"
+"@msgpackr-extract/msgpackr-extract-darwin-arm64@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-darwin-arm64/-/msgpackr-extract-darwin-arm64-3.0.2.tgz#44d752c1a2dc113f15f781b7cc4f53a307e3fa38"
 
-"@msgpackr-extract/msgpackr-extract-darwin-x64@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-darwin-x64/-/msgpackr-extract-darwin-x64-2.1.2.tgz#bfbc6936ede2955218f5621a675679a5fe8e6f4c"
+"@msgpackr-extract/msgpackr-extract-darwin-x64@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-darwin-x64/-/msgpackr-extract-darwin-x64-3.0.2.tgz#f954f34355712212a8e06c465bc06c40852c6bb3"
 
-"@msgpackr-extract/msgpackr-extract-linux-arm64@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-arm64/-/msgpackr-extract-linux-arm64-2.1.2.tgz#22555e28382af2922e7450634c8a2f240bb9eb82"
+"@msgpackr-extract/msgpackr-extract-linux-arm64@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-arm64/-/msgpackr-extract-linux-arm64-3.0.2.tgz#45c63037f045c2b15c44f80f0393fa24f9655367"
 
-"@msgpackr-extract/msgpackr-extract-linux-arm@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-arm/-/msgpackr-extract-linux-arm-2.1.2.tgz#ffb6ae1beea7ac572b6be6bf2a8e8162ebdd8be7"
+"@msgpackr-extract/msgpackr-extract-linux-arm@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-arm/-/msgpackr-extract-linux-arm-3.0.2.tgz#35707efeafe6d22b3f373caf9e8775e8920d1399"
 
-"@msgpackr-extract/msgpackr-extract-linux-x64@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-x64/-/msgpackr-extract-linux-x64-2.1.2.tgz#7caf62eebbfb1345de40f75e89666b3d4194755f"
+"@msgpackr-extract/msgpackr-extract-linux-x64@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-linux-x64/-/msgpackr-extract-linux-x64-3.0.2.tgz#091b1218b66c341f532611477ef89e83f25fae4f"
 
-"@msgpackr-extract/msgpackr-extract-win32-x64@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-2.1.2.tgz#f2d8b9ddd8d191205ed26ce54aba3dfc5ae3e7c9"
+"@msgpackr-extract/msgpackr-extract-win32-x64@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-3.0.2.tgz#0f164b726869f71da3c594171df5ebc1c4b0a407"
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
@@ -4513,24 +4513,24 @@ ms@2.1.3:
   version "2.1.3"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
 
-msgpackr-extract@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/msgpackr-extract/-/msgpackr-extract-2.1.2.tgz"
+msgpackr-extract@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/msgpackr-extract/-/msgpackr-extract-3.0.2.tgz#e05ec1bb4453ddf020551bcd5daaf0092a2c279d"
   dependencies:
-    node-gyp-build-optional-packages "5.0.3"
+    node-gyp-build-optional-packages "5.0.7"
   optionalDependencies:
-    "@msgpackr-extract/msgpackr-extract-darwin-arm64" "2.1.2"
-    "@msgpackr-extract/msgpackr-extract-darwin-x64" "2.1.2"
-    "@msgpackr-extract/msgpackr-extract-linux-arm" "2.1.2"
-    "@msgpackr-extract/msgpackr-extract-linux-arm64" "2.1.2"
-    "@msgpackr-extract/msgpackr-extract-linux-x64" "2.1.2"
-    "@msgpackr-extract/msgpackr-extract-win32-x64" "2.1.2"
+    "@msgpackr-extract/msgpackr-extract-darwin-arm64" "3.0.2"
+    "@msgpackr-extract/msgpackr-extract-darwin-x64" "3.0.2"
+    "@msgpackr-extract/msgpackr-extract-linux-arm" "3.0.2"
+    "@msgpackr-extract/msgpackr-extract-linux-arm64" "3.0.2"
+    "@msgpackr-extract/msgpackr-extract-linux-x64" "3.0.2"
+    "@msgpackr-extract/msgpackr-extract-win32-x64" "3.0.2"
 
 msgpackr@^1.5.4:
-  version "1.7.2"
-  resolved "https://registry.npmjs.org/msgpackr/-/msgpackr-1.7.2.tgz"
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.10.1.tgz#51953bb4ce4f3494f0c4af3f484f01cfbb306555"
   optionalDependencies:
-    msgpackr-extract "^2.1.2"
+    msgpackr-extract "^3.0.2"
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -4587,6 +4587,10 @@ node-forge@^0.7.1:
 node-gyp-build-optional-packages@5.0.3:
   version "5.0.3"
   resolved "https://registry.npmjs.org/node-gyp-build-optional-packages/-/node-gyp-build-optional-packages-5.0.3.tgz"
+
+node-gyp-build-optional-packages@5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/node-gyp-build-optional-packages/-/node-gyp-build-optional-packages-5.0.7.tgz#5d2632bbde0ab2f6e22f1bbac2199b07244ae0b3"
 
 node-gyp-build@^4.3.0:
   version "4.5.0"
