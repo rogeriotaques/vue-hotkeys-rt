@@ -37,7 +37,7 @@
     "prettier": "^1.19.1",
     "pug": "^3.0.1",
     "typescript": "^3.7.5",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-eslint-parser": "^7.0.0",
     "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.11"
