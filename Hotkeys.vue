@@ -2,11 +2,16 @@
 <template></template>
 
 <script lang="ts">
+export type Hotkey = {
+  keyString: string;
+  keyCode: number;
+};
+
 export default {
   name: 'Hotkeys',
 
   data: () => ({
-    supportedShortcuts: []
+    supportedShortcuts: [] as Hotkey[]
   }), // data
 
   props: {
@@ -31,7 +36,7 @@ export default {
       const isKeySupported = this.supportedShortcuts.some(({ keyCode }) => keyCode === key);
 
       if (ctr /* CTRL | CMD */ && isKeySupported) {
-        const { keyString } = this.supportedShortcuts.find(({ keyCode }) => keyCode === key);
+        const { keyString } = this.supportedShortcuts.find(({ keyCode }) => keyCode === key) || { keyString: '' };
 
         if (this.debug) {
           console.log(`CMD (CTRL) + ${keyString} (${key}) pressed`);
